@@ -1,0 +1,30 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+<form [formGroup]="checkoutForm">
+  <button class="button" type="submit">Submit</button>
+</form>
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()"></form>
+<h3>Form</h3>
+<div>
+  <label for="name">
+    Name
+  </label>
+  <input id="name" type="text" formControlName="name">
+</div>
+
+<div>
+  <label for="address">
+    Address
+  </label>
+  <input id="address" type="text" formControlName="address">
+</div>
+
+<div>
+  <label for="phone">
+    Phone number
+  </label>
+  <input id="phone" type="number" formControlName="phone">
+</div>
+
+<button class="button" type="submit">Submit</button>
+</form>
